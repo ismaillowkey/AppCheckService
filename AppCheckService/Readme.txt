@@ -1,5 +1,6 @@
 ﻿www.ismaillowkey.net
 
+this example windows service can run external winform application 
 
 -- add configuration.ini 
 [App]
