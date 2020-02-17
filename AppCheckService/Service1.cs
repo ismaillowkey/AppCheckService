@@ -29,7 +29,7 @@ namespace MorirokuVDOCheckService
 
         protected async override void OnStart(string[] args)
         {
-            WriteToEventLog("TOHO", "MorirokuVDO.Logging", "Startup: Run service MorirokuVDOCheckService", EventLogEntryType.Information);
+            WriteToEventLog("IsmailLowkey", "IsmailLowkey.Logging", "Startup: Run service AppCheckService", EventLogEntryType.Information);
             var FolderPath = Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location);
 
 
@@ -83,7 +83,7 @@ namespace MorirokuVDOCheckService
                 }
                 catch(Exception ex)
                 {
-                    WriteToEventLog("TOHO", "MorirokuVDO.Logging", "Error : " + ex.Message , EventLogEntryType.Error);
+                    WriteToEventLog("IsmailLowkey", "IsmailLowkey.Logging", "Error : " + ex.Message , EventLogEntryType.Error);
                 }
             }
 
@@ -95,7 +95,7 @@ namespace MorirokuVDOCheckService
         {
             // We quit by cancelling the task
             cts.Cancel();
-            WriteToEventLog("TOHO", "MorirokuVDO.Logging", "Startup: Stop service MorirokuVDOCheckService", EventLogEntryType.Warning);
+            WriteToEventLog("IsmailLowkey", "IsmailLowkey.Logging", "Startup: Stop service AppCheckService", EventLogEntryType.Warning);
         }
 
 
